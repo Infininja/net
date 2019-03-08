@@ -1,3 +1,11 @@
-body {
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container > div {
+  width: 50%;
+  margin: 10px;
   text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
