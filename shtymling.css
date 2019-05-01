@@ -1,8 +1,10 @@
 html {
-  background-image: url("A11-40-5872-74HR.jpg");
+  background-image: url("walk.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  text-align: center;
+  color: white;
 }
 .nav {
   display: flex;
@@ -10,43 +12,35 @@ html {
   margin-left: 100px;
   justify-content: space-around;
   margin-right: 100px;
-  padding-top: 25px;
+  padding-top: 20px;
 }
-@media screen and (max-width: 768px) {
+.links {
+  padding-top: 10px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+img {
+  width: 100%;
+  min-width: 50px;
+  max-width: 200px;
+}
+@media screen and (max-width: 800px) {
   .nav {
     flex-direction: column;
     text-align: center;
     flex-wrap: nowrap;
   }
-}
-@media screen and (max-width: 772px) {
-  html {
-    background-image: url("space2.png");
+  .img {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-.nav > .links {
-  padding-top: 11px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.container > .content {
-  text-align: center;
-  color: white;
+.content {
   margin-left: 100px;
   margin-right: 100px;
-}
-a, a:visited {
-  color: grey;
-  text-decoration: none;
-}
-a:hover {
-  color: lightgrey;
-  text-decoration: none;
-}
-a:active {
-  color: white;
-}
-img {
-  max-width: 100%;
-  max-height: 100%;
 }
