@@ -1,46 +1,41 @@
-html {
+body {
   background-image: url("walk.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   text-align: center;
   color: white;
 }
 .nav {
   display: flex;
   flex-direction: row;
-  margin-left: 100px;
+  align-items: center;
   justify-content: space-around;
-  margin-right: 100px;
-  padding-top: 20px;
+  margin: auto;
+  padding: 5px;
+  background-color: rgb(171, 171, 171, 0.6);
+ 
 }
-.links {
-  padding-top: 10px;
+.nav img {
+  width: 100%;
+  min-width: auto;
+  max-width: 200px;
 }
-a {
+@media screen and (max-width: 420px) {
+  .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+	background-color: url("walk-420.png");
+  }
+}
+    
+.links a{
     color: white;
     text-decoration: none;
 }
-img {
-  width: 100%;
-  min-width: 50px;
-  max-width: 200px;
-}
-@media screen and (max-width: 800px) {
-  .nav {
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: nowrap;
-  }
-  .img {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 .content {
-  margin-left: 100px;
-  margin-right: 100px;
+	background-color: rgb(171, 171, 171, 0.6);
+	height: auto;
 }
+
