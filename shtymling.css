@@ -8,8 +8,7 @@ body {
   	color: white;
 }
 .nav {
-	position: fixed;
-  	display: flex;
+	display: flex;
   	flex-direction: row;
   	align-items: center;
   	justify-content: space-around;
