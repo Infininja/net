@@ -22,6 +22,10 @@ body {
   	min-width: auto;
   	max-width: 200px;
 }
+
+img {
+	padding: 5px;
+}
 @media screen and (max-width: 420px) {
   .nav {
     	flex-direction: column;
@@ -30,8 +34,8 @@ body {
   }
 }
     
-.links a{
-    	color: white;
+a {
+    	color: lightblue;
     	text-decoration: none;
 }
 .content {
